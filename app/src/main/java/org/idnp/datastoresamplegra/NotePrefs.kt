@@ -23,7 +23,7 @@ class NotePrefs(
         }
 
     companion object {
-        val PREFS_NAME = "PREFS_NAME"
+        const val PREFS_NAME = "PREFS_NAME"
         private val BACKGROUND_COLOR = stringPreferencesKey("key_app_background_color")
 
     }
