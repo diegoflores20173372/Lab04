@@ -1,6 +1,7 @@
 package org.idnp.datastoresamplegra
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -101,6 +102,12 @@ class MainActivity2 : AppCompatActivity() {
                     notePrefs.saveNoteBackgroundColor(Color.YELLOW.toString())
                 }
             }
+        }
+
+        val btnThirdActivity: Button = findViewById(R.id.btn_lab_04)
+        btnThirdActivity.setOnClickListener {
+            val intent = Intent(this, Lab04Activity::class.java)
+            startActivity(intent)
         }
 
     }

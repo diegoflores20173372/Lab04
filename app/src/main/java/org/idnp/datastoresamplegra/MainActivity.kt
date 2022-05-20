@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
         // Increment the counter
         increaseBtn.setOnClickListener {
             lifecycleScope.launch {
@@ -56,17 +55,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-        val btnSecondActivity = findViewById(R.id.btnSecondActivity) as Button
+        val btnSecondActivity = findViewById<Button>(R.id.btnSecondActivity)
 
         btnSecondActivity.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
-
         }
-
-
     }
-
-
 }
